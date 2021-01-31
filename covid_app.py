@@ -46,18 +46,18 @@ window.title("Quarantine Community")
 # configuring size of the window 
 window.geometry('1000x1000')
 #Create Tab Control
-TAB_CONTROL = ttk.Notebook(window)
+tabs = ttk.Notebook(window)
 #Tab1
-TAB1 = ttk.Frame(TAB_CONTROL)
-TAB_CONTROL.add(TAB1, text='News')
+TAB1 = ttk.Frame(tabs)
+tabs.add(TAB1, text='News')
 #Tab2
-TAB2 = ttk.Frame(TAB_CONTROL)
-TAB_CONTROL.add(TAB2, text='Forum')
+TAB2 = ttk.Frame(tabs)
+tabs.add(TAB2, text='Forum')
 #Tab3
-TAB3 = ttk.Frame(TAB_CONTROL)
-TAB_CONTROL.add(TAB3, text='Activities')
+TAB3 = ttk.Frame(tabs)
+tabs.add(TAB3, text='Activities')
 
-TAB_CONTROL.pack(expand=1, fill="both")
+tabs.pack(expand=1, fill="both")
 
 
 #tab 1 (articles)
