@@ -25,8 +25,6 @@ soup1 = BeautifulSoup(coverpage, 'html.parser')
 
 #class with all top covid articles
 results = soup1.find(class_='ContentList')
-# def getHTML() :
-#     return(results.prettify())
 '''
 #class with an individual article
 article = results.find(class_='ContentList__Item')
@@ -60,8 +58,6 @@ links = []
 for x in range(len(articles)):
     names.append(articles[x]['aria-label']+"\n")
     links.append(urls[x]['href']+"\n")
-
-print(names)
 
 #return names & urls to display
 def get_names():
