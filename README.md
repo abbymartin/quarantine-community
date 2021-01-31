@@ -1,2 +1,2 @@
 # quarantine-community
-App made for Cheezy Code 2021
+App made for ChezyCode 2021
